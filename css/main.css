@@ -1,0 +1,181 @@
+/*以‘.’开头的css样式称之为 类样式*/
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			background:url("../images/bg.jpg") ;
+			background-size: cover;
+
+			background-position: top center;
+			background-repeat: no-repeat;
+			font-size:12px;
+			font-family:"微软雅黑";
+			color:#666;
+		}
+		.music{
+			width:720px;
+			height:470px;
+			border:1px solid #37332D;
+
+				/*margin:上 右 下 左;
+				margin:垂直 水平;
+				margin:全部;*/
+				margin:100px auto;   /*国际标准，不要用center*/
+				box-shadow:1px 1px 30px 5px #000;
+		}
+
+		/*m_lyric start*/
+		.music .m_lyric{
+			width:50%;
+			height:470px;
+			background:#ccc;
+			float:left;
+		}
+		.music .m_lyric h2{
+			font-size:24px;
+			font-weight:500;
+			text-align:center;
+			line-height:60px;
+		}                                      /*border:1px solid red;
+			*/
+		.music .m_lyric .m_con{
+			width:101.5%;
+			height:300px;
+			background:#E4E4E4;
+			overflow:scroll;
+			font-size:14px;
+			line-height:22px;
+			padding-left:10px;
+			background:url("../images/run.gif");
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+/*			 -webkit-filter: blur(0.8px);
+            -moz-filter: blur(0.8px);
+            -o-filter: blur(0.8px);
+            -ms-filter: blur(0.8px);
+            filter: blur(0.8px); */
+		}/*background:url("images/(K}58]2{271D0TGK}8M65RO.gif") no-repeat;	*/
+
+		/*.tztime{
+			position:absolute;
+		}*/
+
+
+		.music .m_lyric .m_player{
+			width: 76.5%;
+			height: 82px;
+			background: #000;
+			padding: 34px 0 0 85px;
+			margin-top: -6px;
+			box-shadow: 0px -3px 11px #222;
+		}
+		.music .m_lyric .m_player .m_btn{
+			width:180px;
+			height:52px;
+		}/*border: 1px solid #fff;
+		*/
+
+		.music .m_lyric .m_player .m_btn a{
+			display:block;
+			background:url("../images/player_bg.png") no-repeat;
+			float:left;
+			margin: 5px 10px;
+		} /*border:1px solid red;
+		*/
+
+		.music .m_lyric .m_player .m_btn .b_pre{
+			width:36px;
+			height:28px;
+			background-position:-68px 0px;
+			margin-top:10px;
+		}
+		.music .m_lyric .m_player .m_btn .b_pre:hover{
+			background-position:-68px -32px;
+		}                                 /*.b_pre:hover      中间不能有空格*/
+		.music .m_lyric .m_player .m_btn .b_play{
+			width:42px;
+			height:42px;
+			background-position:-105px 0px;
+		}
+		.music .m_lyric .m_player .m_btn .b_play:hover{
+			background-position:-105px -42px;
+		}
+		.music .m_lyric .m_player .m_btn .b_next{
+			width:36px;
+			height:28px;
+			background-position:-147px 0px;
+			margin-top:10px;
+		}
+		.music .m_lyric .m_player .m_btn .b_next:hover{
+			background-position:-147px -32px;
+		}
+		/*end m_lyric*/
+
+		/*m_list start*/
+		.music .m_list{
+			width:50%;
+			height:470px;
+			background:#262c35;
+			float:left;
+		}
+		.music .m_list ul li{
+			border-bottom:1px solid #1b1f25;
+			border-top: 1px solid #363E4A;
+			line-height:40px;
+			list-style:none;
+			padding-left:10px;
+			font-size:14px;
+		}
+		.music .m_list ul li a{
+			color:#666;
+			text-decoration:none;
+		}
+		.music .m_list ul li a:hover{
+			color:#fff;
+			text-decoration:underline;
+		}
+		/*end m_list*/
+
+		/*歌词变色*/
+		.sel{
+			color:#08F9F7;
+		}
+
+		/*歌词窗体*/
+		::-webkit-scrollbar{
+			width:4px;
+			height:6px;
+			background:#F5F5F5;
+		}
+		::-webkit-scrollbar-button{
+			background-color:#F5F5F5;
+		}
+		::-webkit-scrollbar-track{
+			background:#F5F5F5;
+		}
+		::-webkit-scrollbar-track-piece{
+			background:#F7F5F5;
+		}
+		::-webkit-scrollbar-thumb{
+			background:#F5F5F5;
+		}
+		::-webkit-scrollbar-corner{
+			background:#B1CDFE;
+		}
+		::-webkit-scrollbar-resizer{
+			background:#FDBCF8;
+		}
+		scrollbar{
+			-moz-appearance:none !important;
+			background:rgb(0,255,0) !important;
+		}
+		scrollbarbutton{
+			-moz-appearance:none !important;
+			background-color:rgb(0,0,255) !important;
+		}
+		scrollbarbutton:hover{
+			-moz-appearance:none !important;
+			background-color:rgb(255,0,0) !important;
+		}
